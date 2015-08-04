@@ -1,0 +1,53 @@
+@import "inuit-css";
+
+.text--center {
+  text-align: center !important;
+}
+
+
+.vertical--middle {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.vertical--middle > *{
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #cccccc;
+  background-image: url("/img/honeycomb.png");
+  padding: 1em;
+  font: 14px "Lato", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  color: #1e1e1e;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.front {
+  height: 100%;
+  overflow: hidden;
+  //background: url(/img/front-bg3.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  img {
+    width: 100%;
+  }
+}
+
+a {
+  color: #00B7FF;
+}
