@@ -2071,6 +2071,14 @@ html {
   display: table;
   clear: both; }
 
+/*** FONTS ***/
+/*** COLOR SCHEME ***/
+.layout {
+  font-size: 0; }
+
+.layout__item {
+  font-size: 1rem; }
+
 .text--center {
   text-align: center !important; }
 
@@ -2088,14 +2096,24 @@ html, body {
   width: 100%; }
 
 body {
-  background-color: #cccccc;
+  background-color: #fefefe;
   background-image: url("/img/honeycomb.png");
-  padding: 1em;
-  font: 14px "Lato", Helvetica, Arial, sans-serif; }
+  font-family: "Lato", "Open Sans", Arial, sans; }
+
+h1 {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  color: #9D1F20;
+  letter-spacing: 5px;
+  margin-top: 55%;
+  font-weight: 400;
+  font-size: 2em;
+  text-transform: uppercase; }
+  h1 span {
+    font-weight: 200; }
 
 h2 {
   color: #1e1e1e;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 300; }
 
 .front {
@@ -2105,8 +2123,65 @@ h2 {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; }
-  .front img {
-    width: 100%; }
+  .front svg {
+    max-width: 100%; }
 
 a {
   color: #00B7FF; }
+
+/* WebKit and Opera browsers */
+@-webkit-keyframes spinner {
+  from {
+    -webkit-transform: rotateY(0deg);
+    transform-origin: center; }
+  to {
+    -webkit-transform: rotateY(-360deg);
+    transform-origin: center; } }
+/* all other browsers */
+@keyframes spinner {
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -moz-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center; }
+  to {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+    -moz-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center; } }
+.logo {
+  height: 100%; }
+
+#stage {
+  margin: 1em auto;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  -ms-perspective: 1200px;
+  perspective: 2000px; }
+
+#spinner {
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 4s;
+  animation-name: spinner;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+#spinner:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused; }
+
+/**** MEDIA QUERIES ****/
+@media screen and (min-width: 45em) {
+  html {
+    font-size: 120%; } }
