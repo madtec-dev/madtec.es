@@ -2100,11 +2100,14 @@ body {
   background-image: url("/img/honeycomb.png");
   font-family: "Lato", "Open Sans", Arial, sans; }
 
+.logo {
+  vertical-align: middle;
+  height: 100%; }
+
 h1 {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   color: #9D1F20;
   letter-spacing: 5px;
-  margin-top: 55%;
   font-weight: 400;
   font-size: 2em;
   text-transform: uppercase; }
@@ -2153,9 +2156,6 @@ a {
     -moz-transform-origin: center;
     -ms-transform-origin: center;
     transform-origin: center; } }
-.logo {
-  height: 100%; }
-
 #stage {
   margin: 1em auto;
   -webkit-perspective: 1200px;

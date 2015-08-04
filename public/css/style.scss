@@ -47,11 +47,15 @@ body {
   font-family: $font--body;
 }
 
+.logo {
+  vertical-align: middle; 
+  height: 100%;
+}
+
 h1 {
   font-family: $font--heading;
   color: $red--dark;
   letter-spacing: 5px;
-  margin-top: 55%;
   font-weight: 400;
   span {
     font-weight: 200;
@@ -113,9 +117,6 @@ a {
 
     }
   }
-  .logo {
-  height: 100%;
-}
   #stage {
     margin: 1em auto;
     -webkit-perspective: 1200px;
